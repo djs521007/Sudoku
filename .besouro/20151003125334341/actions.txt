@@ -1,0 +1,18 @@
+FileOpenedAction 1443866014488 SudokuVerifier.java 217 1 1 0
+RefactoringAction 1443866043889 SudokuVerifier.java RENAME verify(String)=>class main null
+RefactoringAction 1443866046424 SudokuVerifier.java MOVE verify(String)=>class SudokuVerifier null
+RefactoringAction 1443866069278 SudokuVerifier.java ADD vod main FIELD
+RefactoringAction 1443866070295 SudokuVerifier.java ADD static vod main() METHOD
+RefactoringAction 1443866070295 SudokuVerifier.java ADD int verify(String) METHOD
+RefactoringAction 1443866084368 SudokuVerifier.java RENAME main()=>static void main(String METHOD
+RefactoringAction 1443866086378 SudokuVerifier.java MOVE verify(String)=>class SudokuVerifier METHOD
+RefactoringAction 1443866279466 SudokuVerifier.java MOVE verify(String)=>class main METHOD
+RefactoringAction 1443866287980 SudokuVerifier.java MOVE verify(String)=>class SudokuVerifier METHOD
+RefactoringAction 1443866322033 SudokuVerifier.java MOVE verify(String)=>class main METHOD
+RefactoringAction 1443866323539 SudokuVerifier.java MOVE verify(String)=>class SudokuVerifier METHOD
+RefactoringAction 1443867389719 SudokuVerifier.java MOVE verify(String)=>class main METHOD
+RefactoringAction 1443867392227 SudokuVerifier.java MOVE verify(String)=>class SudokuVerifier METHOD
+RefactoringAction 1443867393247 SudokuVerifier.java MOVE verify(String)=>class main METHOD
+RefactoringAction 1443867501277 SudokuVerifier.java RENAME main=>void main(String METHOD
+RefactoringAction 1443867518841 SudokuVerifier.java ADD Exception e FIELD
+RefactoringAction 1443867523402 SudokuVerifier.java REMOVE e FIELD

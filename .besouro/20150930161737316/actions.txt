@@ -1,1 +1,5 @@
 FileOpenedAction 1443619057467 SudokuVerifier.java 217 17 48 0
+FileOpenedAction 1443619354152 sudokuMain.java 55 0 0 0
+FileOpenedAction 1443619586212 sudokuTask.java 55 0 0 0
+FileOpenedAction 1443619747986 Exhaustive.java 55 0 0 0
+FileOpenedAction 1443620059742 SudokuVerifier.java 217 1 1 0

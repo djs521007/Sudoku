@@ -1,0 +1,23 @@
+FileOpenedAction 1443975929807 SudokuVerifier.java 1387 5 13 0
+RefactoringAction 1443975953237 SudokuVerifier.java ADD static int METHOD
+RefactoringAction 1443975978838 SudokuVerifier.java ADD static boolean Verifier(int METHOD
+RefactoringAction 1443976018955 SudokuVerifier.java REMOVE Verifier(int METHOD
+RefactoringAction 1443976018956 SudokuVerifier.java REMOVE StrIntoArray(String) METHOD
+RefactoringAction 1443976057267 SudokuVerifier.java ADD static boolean Verifier(int METHOD
+RefactoringAction 1443976057268 SudokuVerifier.java ADD static int METHOD
+RefactoringAction 1443976092280 SudokuVerifier.java REMOVE Verifier(int METHOD
+RefactoringAction 1443976092281 SudokuVerifier.java REMOVE StrIntoArray(String) METHOD
+RefactoringAction 1443976099296 SudokuVerifier.java ADD static boolean Verifier(int METHOD
+RefactoringAction 1443976099297 SudokuVerifier.java ADD static int METHOD
+RefactoringAction 1443976366617 SudokuVerifier.java ADD static boolean SmallSudokuVerifier(int METHOD
+RefactoringAction 1443976379525 SudokuVerifier.java REMOVE SmallSudokuVerifier(int METHOD
+RefactoringAction 1443976388048 SudokuVerifier.java ADD static boolean SmallSudokuVerifier(int METHOD
+RefactoringAction 1443976398554 SudokuVerifier.java RENAME SmallSudokuVerifier(int=>static boolean SmallSudokuVerifier() METHOD
+RefactoringAction 1443976401582 SudokuVerifier.java RENAME SmallSudokuVerifier()=>static boolean SmallSudokuVerifier(int METHOD
+RefactoringAction 1443976407588 SudokuVerifier.java RENAME Verifier(int=>static boolean Verifier() METHOD
+RefactoringAction 1443976410600 SudokuVerifier.java RENAME Verifier()=>static boolean Verifier(int METHOD
+RefactoringAction 1443976441334 SudokuVerifier.java ADD static boolean ArrayVerifier(int METHOD
+RefactoringAction 1443976445690 SudokuVerifier.java REMOVE ArrayVerifier(int METHOD
+RefactoringAction 1443976447498 SudokuVerifier.java ADD static boolean ArrayVerifier(int METHOD
+RefactoringAction 1443976451215 SudokuVerifier.java REMOVE ArrayVerifier(int METHOD
+RefactoringAction 1443976454741 SudokuVerifier.java ADD static boolean ArrayVerifier(int METHOD

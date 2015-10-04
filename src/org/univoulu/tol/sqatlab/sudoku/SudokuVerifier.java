@@ -2,60 +2,59 @@
 package org.univoulu.tol.sqatlab.sudoku;
 import java.util.Scanner;
 public class SudokuVerifier{
-		public void main(String[] args){
-			Scanner sc= new Scanner(System.in);
-			String sd="";
-			boolean isRight=true;
-			while(true)
-			{
-				try{
-					sd=sc.nextLine();
-					if(sd.length()!=81){
-						System.out.println("Number of Sudoku is wrong, please re-enter new Sudoku");
-						isRight=false;
-					}
-					else {
-						for(int i=0;i<sd.length();i++){
-							if(!Character.isDigit(sd.charAt(i))){
-								System.out.println("Input is illegal, please re-enter new Sudoku");
-								isRight=false;
-								break;
-							}
-						}
-						if (isRight){
-							for(int i=0; i<sd.length();i++){
-								for(int j=i+1;j<sd.length();){
-									if (sd.charAt(i)!=sd.charAt(j)){
-										isRight=false;
-									}
-									if(j<i+9){
-										j++;
-									}
-									else{
-										j=(j/9+1)*9;
-									}
-								}
-								if(isRight){
-									System.out.println("Correct,It's a sudoku!");
-									break;
-								}
-								else{
-									System.out.println("No, it's not a sudoku! Please re-enter a sudoku!");
-								}
-							}
-						}
-					
-						catch(Exception e){
-						}
-					}
+		public static void main(String[] args){
+			Scanner scanner= new Scanner(System.in);
+			String line=scanner.nextLine();
+			if(LengthVerifier(line)){
+				int m[]=StrIntoArray(line);
+				if(Verifier(m)){
+					System.out.println("Yes,it's Sudoku!");
+				}
+				else{
+					System.out.println("No,itn't Sudoku!");
+				}
 				}
 			}
 		}
-	
-
-	public int verify(String candidateSolution) {
+		public static Boolean LengthVerifier(String s){
+			if(s.length()!=81){
+				System.out.println("Lenth doesn't equal to 81 characters!");
+				return false;
+			}
+			return true;
+		}
+		public static Boolean NumVerifier(String s){
+		 for(int i=0;i<s.length();i++){
+			 int n=s.charAt(i);
+			 if(n<49||n>57){
+				 System.out.println("Not all digital(1-9)!");
+				 return false;
+			 }
+		 }
+		 return true;
+		}
+		public static Boolean RowVerifier(int m []){
+			int n[][]=new int [9][9];
+			for(int i=0;i<9;i++){
+				for(int j=0;j<9;j++){
+					n[i][j]=m[i*9+j];
+				}
+				if(!ArrayVerifier(n[i])){
+					return false;
+				}
+			}
+			return true;
+		}
+		public static Boolean ColumnVerifier(int m []){
+			int n[][]=new int [9][9];
+			for(int i=0;i<9;i++){
+				for(int j=0;j<9;j++){
+					n[i][j]=m[i+j*9];
+				}
+				if(!ArrayVerifier(n[i])){
+					return false;
+				}
+			}
+			return true;
+		}
 		
-		// returns 1 if the candidate solution is correct
-		return 0;
-	}
-}

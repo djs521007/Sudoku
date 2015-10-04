@@ -1,0 +1,32 @@
+FileOpenedAction 1443972929308 SudokuVerifier.java 1375 2 1 0
+RefactoringAction 1443973060483 SudokuVerifier.java REMOVE verify(String) METHOD
+RefactoringAction 1443973068539 SudokuVerifier.java ADD Scanner sc FIELD
+RefactoringAction 1443973068540 SudokuVerifier.java ADD String line FIELD
+RefactoringAction 1443973072053 SudokuVerifier.java REMOVE line FIELD
+RefactoringAction 1443973072054 SudokuVerifier.java REMOVE sc FIELD
+RefactoringAction 1443973477383 SudokuVerifier.java ADD Boolean Leng FIELD
+RefactoringAction 1443973478396 SudokuVerifier.java RENAME Leng=>Boolean Length FIELD
+RefactoringAction 1443973481408 SudokuVerifier.java RENAME Length=>Boolean LengthVeri FIELD
+RefactoringAction 1443973482914 SudokuVerifier.java RENAME LengthVeri=>Boolean LengthVerifier FIELD
+RefactoringAction 1443973487421 SudokuVerifier.java RENAME LengthVerifier=><initializer /1> null
+RefactoringAction 1443973691257 SudokuVerifier.java ADD Boolean Numb FIELD
+RefactoringAction 1443973693773 SudokuVerifier.java RENAME Numb=>Boolean Numver FIELD
+RefactoringAction 1443973695790 SudokuVerifier.java RENAME Numver=>Boolean NumC FIELD
+RefactoringAction 1443973697810 SudokuVerifier.java RENAME NumC=>Boolean NumVeri FIELD
+RefactoringAction 1443973700318 SudokuVerifier.java RENAME NumVeri=>Boolean NumVerifier FIELD
+RefactoringAction 1443973705333 SudokuVerifier.java RENAME NumVerifier=>static Boolean NumVerifier(String) METHOD
+RefactoringAction 1443975265410 SudokuVerifier.java ADD Boolean Row FIELD
+RefactoringAction 1443975268921 SudokuVerifier.java RENAME Row=>Boolean RowVerifier FIELD
+RefactoringAction 1443975290744 SudokuVerifier.java RENAME RowVerifier=>static Boolean RowVerifier() METHOD
+RefactoringAction 1443975292760 SudokuVerifier.java RENAME RowVerifier()=>static Boolean RowVerifier(int) METHOD
+RefactoringAction 1443975480086 SudokuVerifier.java RENAME RowVerifier(int)=>static Boolean RowVerifier(int METHOD
+RefactoringAction 1443975592403 SudokuVerifier.java ADD Boolean Small FIELD
+RefactoringAction 1443975595410 SudokuVerifier.java REMOVE Small FIELD
+RefactoringAction 1443975596415 SudokuVerifier.java ADD Boolean C FIELD
+RefactoringAction 1443975618614 SudokuVerifier.java RENAME C=>static Boolean RowVerifier(int METHOD
+RefactoringAction 1443975624127 SudokuVerifier.java RENAME RowVerifier(int=>static Boolean ColumnVerifier(int METHOD
+CompilationAction 1443975918572 SudokuVerifier.java
+CompilationAction 1443975918573 SudokuVerifier.java
+CompilationAction 1443975918574 SudokuVerifier.java
+CompilationAction 1443975918574 SudokuVerifier.java
+CompilationAction 1443975918575 SudokuVerifier.java

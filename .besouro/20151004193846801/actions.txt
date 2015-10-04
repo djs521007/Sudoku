@@ -1,0 +1,3 @@
+FileOpenedAction 1443976726957 SudokuVerifier.java 2096 9 23 0
+RefactoringAction 1443977334198 SudokuVerifier.java ADD static int METHOD
+FileOpenedAction 1443977599043 TestSudokuVerifier.java 216 1 1 0

@@ -83,11 +83,52 @@ public class SudokuVerifier{
 
 		public static boolean SmallSudokuVerifier(int m [] ) {
 			// TODO Auto-generated method stub
-			return false;
+			int [][]n={
+				    { m[0], m[1], m[2], m[9], m[10], m[11], m[18], m[19], m[20] },
+				    { m[3], m[4], m[5], m[12], m[13], m[14], m[21], m[22], m[23] },
+				    { m[6], m[7], m[8], m[15], m[16], m[17], m[24], m[25], m[26] },
+				    { m[27], m[28], m[29], m[36], m[37], m[38], m[45], m[46], m[47] },
+				    { m[30], m[31], m[32], m[39], m[40], m[41], m[48], m[49], m[50] },
+				    { m[33], m[34], m[35], m[42], m[43], m[44], m[51], m[52], m[53] },
+				    { m[54], m[55], m[56], m[63], m[64], m[65], m[72], m[73], m[74] },
+				    { m[57], m[58], m[59], m[66], m[67], m[68], m[75], m[76], m[77] },
+				    { m[60], m[61], m[62], m[69], m[70], m[71], m[78], m[79], m[80] } 
+				    };
+			for(int i=0;i<9;i++){
+				if(!ArrayVerifier(n[i])){
+					return false;
+				}
+			}
+			return true;
 		}
-		public static boolean ArrayVerifier(int[] is) {
+		public static boolean ArrayVerifier(int m[]) {
 			// TODO Auto-generated method stub
-			return false;
+			int sum= m[0]+m[1]+m[2]+m[3]+m[4]+m[5]+m[6]+m[7]+m[8];
+			if(sum !=45){
+				return false;
+			}
+			m=Bubble(m);
+			for (int i=0;i<m.length;i++){
+				if (m[i] !=i+1){
+					return false;
+				}
+			}
+			return true;
+		}
+
+		public static int[] Bubble(int m[] ) {
+			int i,j,temp;
+			for (i=m.length-1;0<i;i--){
+				for (j=0;j<i;j++){
+					if(m[j]>m[j+1]){
+						temp=m[j];
+						m[j]=m[j+1];
+						m[j+1]=temp;
+					}
+				}
+			}
+			// TODO Auto-generated method stub
+			return m;
 		}
 		
 }

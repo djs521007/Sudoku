@@ -1,0 +1,4 @@
+FileOpenedAction 1444216342725 TestSudokuVerifier.java 216 1 1 0
+UnitTestCaseAction 1444216470447 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1444216470457 TestSudokuVerifier FAIL
+EditAction 1444217289406 TestSudokuVerifier.java 266 1 2 0

@@ -14,8 +14,7 @@ public class SudokuVerifier{
 					System.out.println("No,itn't Sudoku!");
 				}
 				}
-			}
-		
+			}		
 		public static boolean LengthVerifier(String s){
 			if(s.length()!=81){
 				System.out.println("Lenth doesn't equal to 81 characters!");
@@ -67,7 +66,6 @@ public class SudokuVerifier{
 			}
 			return true;
 		}
-
 		public static boolean ColumnVerifier(int m[]){
 			int n[][]=new int [9][9];
 			for(int i=0;i<9;i++){
@@ -80,7 +78,6 @@ public class SudokuVerifier{
 			}
 			return true;
 		}
-
 		public static boolean SmallSudokuVerifier(int m [] ) {
 			// TODO Auto-generated method stub
 			int [][]n={
@@ -115,7 +112,6 @@ public class SudokuVerifier{
 			}
 			return true;
 		}
-
 		public static int[] Bubble(int m[] ) {
 			int i,j,temp;
 			for (i=m.length-1;0<i;i--){
@@ -130,5 +126,4 @@ public class SudokuVerifier{
 			// TODO Auto-generated method stub
 			return m;
 		}
-		
 }

@@ -6,17 +6,21 @@ public class SudokuVerifier{
 			Scanner scanner= new Scanner(System.in);
 			String line=scanner.nextLine();
 			if(LengthVerifier(line)){
-				int m[]=StrIntoArray(line);
-				if(Verifier(m)){
-					System.out.println("Yes,it's Sudoku!");
-				}
-				else{
-					System.out.println("No,itn't Sudoku!");
+				if(NumVerifier(line)){
+					int m[]=StrIntoArray(line);
+					int i= -Verifier(m); 
+					switch (i){
+					case 0: System.out.println("Yes,it's Sudoku!"); break;
+					case 2: System.out.println("No,itn't Sudoku! it is violating Rule #2");break;
+					case 3: System.out.println("No,itn't Sudoku! it is violating Rule #3");break;
+					case 4: System.out.println("No,itn't Sudoku! it is violating Rule #4");break;
+					default:
+						}
 				}
 				}
 			}		
-		public static boolean LengthVerifier(String s){
-			if(s.length()!=81){
+		public static boolean LengthVerifier(String candidateSolution){
+			if(candidateSolution.length()!=81){
 				System.out.println("Lenth doesn't equal to 81 characters!");
 				return false;
 			}
@@ -26,27 +30,27 @@ public class SudokuVerifier{
 		 for(int i=0;i<s.length();i++){
 			 int n=s.charAt(i);
 			 if(n<49||n>57){
-				 System.out.println("Not all digital(1-9)!");
+				 System.out.println("No,itn't Sudoku! it is violating Rule #1");
 				 return false;
 			 }
 		 }
 		 return true;
 		}
-		public static boolean Verifier(int m[] ) {
-			// TODO Auto-generated method stub
+		public static  int Verifier(int m[] ) {
+			 //TODO Verifier whole string
 			if(!RowVerifier(m)){
-				return false;
+				return -3;
 			}
 			if(!ColumnVerifier(m)){
-				return false;
+				return -4;
 			}
 			if(!SmallSudokuVerifier(m)){
-				return false;
+				return -2;
 			}
-			return true;
+			return 0;
 		}
-		public static int[] StrIntoArray(String s) {
-			// TODO Auto-generated method stub
+		public static int[] StrIntoArray(String s) { 
+			// TODO String transfer into array
 			int m[]=new int [81];
 			for(int i=0;i<81;i++){
 				int n=s.charAt(i);
@@ -55,6 +59,7 @@ public class SudokuVerifier{
 			return m;
 		}
 		public static boolean RowVerifier(int m []){
+			//TODO RowVerifier
 			int n[][]=new int [9][9];
 			for(int i=0;i<9;i++){
 				for(int j=0;j<9;j++){
@@ -67,6 +72,7 @@ public class SudokuVerifier{
 			return true;
 		}
 		public static boolean ColumnVerifier(int m[]){
+			//TODO ColumnVerifier
 			int n[][]=new int [9][9];
 			for(int i=0;i<9;i++){
 				for(int j=0;j<9;j++){
@@ -79,7 +85,7 @@ public class SudokuVerifier{
 			return true;
 		}
 		public static boolean SmallSudokuVerifier(int m [] ) {
-			// TODO Auto-generated method stub
+			// TODO 
 			int [][]n={
 				    { m[0], m[1], m[2], m[9], m[10], m[11], m[18], m[19], m[20] },
 				    { m[3], m[4], m[5], m[12], m[13], m[14], m[21], m[22], m[23] },
@@ -99,7 +105,7 @@ public class SudokuVerifier{
 			return true;
 		}
 		public static boolean ArrayVerifier(int m[]) {
-			// TODO Auto-generated method stub
+			// TODO digits appear only once in a sub-grid
 			int sum= m[0]+m[1]+m[2]+m[3]+m[4]+m[5]+m[6]+m[7]+m[8];
 			if(sum !=45){
 				return false;
@@ -123,7 +129,7 @@ public class SudokuVerifier{
 					}
 				}
 			}
-			// TODO Auto-generated method stub
+			// TODO 
 			return m;
 		}
 }

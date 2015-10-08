@@ -1,0 +1,9 @@
+FileOpenedAction 1444323276863 SudokuVerifier.java 3359 10 31 0
+RefactoringAction 1444325337943 SudokuVerifier.java ADD void RowVerifier() METHOD
+RefactoringAction 1444325344982 SudokuVerifier.java REMOVE RowVerifier() METHOD
+RefactoringAction 1444325347499 SudokuVerifier.java ADD void RowVerifier() METHOD
+RefactoringAction 1444325356620 SudokuVerifier.java REMOVE RowVerifier() METHOD
+RefactoringAction 1444325459014 TestSudokuVerifier.java REMOVE verify(String) METHOD
+CompilationAction 1444329770531 SudokuVerifier.java
+RefactoringAction 1444329877489 SudokuVerifier.java ADD void RowVerifier() METHOD
+RefactoringAction 1444329880504 SudokuVerifier.java REMOVE RowVerifier() METHOD

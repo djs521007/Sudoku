@@ -9,7 +9,6 @@ public class TestSudokuVerifier {
 
 	public void test() {
 		SudokuVerifier temple1 = new SudokuVerifier();
-		fail("Not yet implemented");
 	}
 
 }

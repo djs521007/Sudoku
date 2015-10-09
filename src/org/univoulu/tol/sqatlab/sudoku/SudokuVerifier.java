@@ -8,7 +8,7 @@ public class SudokuVerifier{
 			if(LengthVerifier(line)){
 				if(NumVerifier(line)){
 					int m[]=StrIntoArray(line);
-					int i= -Verifier(m); 
+					int i= -Verifier(m);
 					switch (i){
 					case 0: System.out.println("Yes,it's Sudoku!"); break;
 					case 2: System.out.println("No,itn't Sudoku! it is violating Rule #2");break;
@@ -17,7 +17,12 @@ public class SudokuVerifier{
 					default:
 						}
 				}
+				else{
+					System.out.println("No,itn't Sudoku! it is violating Rule #1");
 				}
+				
+				}
+
 			}		
 		public static boolean LengthVerifier(String candidateSolution){
 			if(candidateSolution.length()!=81){
@@ -30,7 +35,6 @@ public class SudokuVerifier{
 		 for(int i=0;i<s.length();i++){
 			 int n=s.charAt(i);
 			 if(n<49||n>57){
-				 System.out.println("No,itn't Sudoku! it is violating Rule #1");
 				 return false;
 			 }
 		 }
@@ -38,6 +42,7 @@ public class SudokuVerifier{
 		}
 		public static  int Verifier(int m[] ) {
 			 //TODO Verifier whole string
+
 			if(!RowVerifier(m)){
 				return -3;
 			}
